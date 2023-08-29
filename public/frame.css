@@ -1,0 +1,67 @@
+/* only render for extension size */
+@media only screen and (max-width: 451px) {
+  iframe,
+  /* date pagination */
+  #root > div > div > div:nth-child(2) > div:nth-child(2),
+  /* checkins description */
+  #root > div > div > div > p,
+  /* entries */
+  #root > div > div > div > div:nth-child(5) {
+    display: none;
+  }
+
+  /* contents */
+  #root > div > div:nth-child(2) {
+    padding-top: 48px;
+  }
+
+  /* navbar */
+  #root > div > div:first-child {
+    position: fixed;
+    z-index: 1000;
+    background-color: rgb(240, 240, 240);
+  }
+
+  /* logo */
+  #root > div > div:first-child > div:first-child {
+    padding-left: 0;
+  }
+
+  /* config */
+  #root > div > div:first-child > div:last-child {
+    padding-right: 10px;
+  }
+
+  /* cards */
+  #root > div > div > div {
+    padding: 8px 20px;
+  }
+
+  /* checkins textarea */
+  #root > div > div > div > div > textarea {
+    max-height: 100px;
+  }
+
+  h1 {
+    font-size: 18px;
+    color: red;
+  }
+
+  h3 {
+    font-size: 14px;
+    color: rgb(82, 104, 180);
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  body {
+    background-color: rgb(240, 240, 240);
+  }
+
+  /* press enter */
+  #root div div:nth-child(3) span {
+    color: rgb(133, 131, 132);
+  }
+}

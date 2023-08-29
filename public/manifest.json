@@ -1,0 +1,23 @@
+{
+  "name": "Cuckoo Chrome Extension",
+  "version": "2.0.0",
+  "manifest_version": 2,
+  "description": "Cuckoo Chrome Extension",
+  "icons": {
+    "512": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://syk0saje.gitlab.io/checkin/",
+        "http://syk0saje.gitlab.io/checkin/"
+      ],
+      "all_frames": true,
+      "css": ["frame.css"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+  }
+}

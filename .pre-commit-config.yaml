@@ -1,0 +1,17 @@
+repos:
+- repo: https://github.com/thinkingmachines/coding-style
+  rev: 2020.07.10
+  hooks:
+  - id: prettier
+  - id: eslint
+    additional_dependencies:
+    - 'eslint-config-prettier@6.11.0'
+    - 'eslint-config-react-app@5.2.1'
+    - '@typescript-eslint/eslint-plugin@2.x'
+    - '@typescript-eslint/parser@2.x'
+    - 'babel-eslint@10.x'
+    - 'eslint-plugin-flowtype@4.x'
+    - 'eslint-plugin-import@2.x'
+    - 'eslint-plugin-jsx-a11y@6.x'
+    - 'eslint-plugin-react@7.x'
+    - 'eslint-plugin-react-hooks@2.x'
